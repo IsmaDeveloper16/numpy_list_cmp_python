@@ -59,19 +59,11 @@ if __name__ == '__main__':
 
     lista_compra_id = [556070, 905045, 42135, 5674, 704060, 1264, 42135, 3654]
 
-    lista_compra_productos = [x for x in lista_compra_id if producto.get(x,"NaN") ]
+    lista_compra_productos = [producto.get(x,"NaN") for x in lista_compra_id ]
 
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
 
-    lista = []
-    for x in lista_compra_id:
-        if x in producto:
-            producto.get([x],"NaN")
-            lista.append([x])
-    print(lista)
     print(lista_compra_productos)
 
-    #hola, se me complico mucho :C perdon si no lo pude terminar si hay alguna forma de resolver
-    # lo me pueden contestar, gracias.
     print("terminamos")
